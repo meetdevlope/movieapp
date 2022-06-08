@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinetoma</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" type="image/png" href="clapperboard.png" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/9f7e8fbc45.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h3 class="logo"> <strong>Cine</strong>toma</h3>
+        <div class="form">
+            <form id="form"><input type="text" id="search" class="fontAwesome" placeholder="&#xf002; Search..."></form>
+        </div>
+    </header>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <div class="tabs">
+        <h2 class="tab tab-1" tabindex="1">Sort by popularity</h2>
+        <h2 class="tab tab-2" tabindex="1">Sort by ratings</h2>
+        <h2 class="tab tab-3" tabindex="1">Upcoming Movies</h2>
+    </div>
+
+    <div class="tags-container">
+
+    </div>
+
+    <div class="main">
+    </div>
+
+
+
+    <div class="pagination">
+        <button class="prev" tabindex="1"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="current-page_div" tabindex="1">
+            <p class="current-page">1</p>
+        </div>
+        <button class="next" tabindex="1"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    <form class="form2">
+        <p class="jump">Jump to page : <input type="number" class="jump-input"> </p>
+    </form>
+
+
+
+
+    <!-- ON CLICK -->
+
+    <div class="darken"></div>
+
+
+    <div class="page-container">
+        <div class="page">
+            <img src="Batman.jpeg" alt="" id="poster-page">
+            <div class="col">
+                <i class="fa-solid fa-xmark"></i>
+                <h1 class="title">The Batman</h1>
+                <p><span id="runtime">176</span> min | Release Date: <span id="release-date">04/03/2022</span> </p>
+                <p><span class="bold">Genre:</span> <span id="page-genre">Action, Crime, Drama</span> </p>
+                <hr>
+                <p><span class="bold">Rating:</span> <span id="page-rating">8.3</span> </p>
+                <p><span class="bold">Overview:</span> <span id="overview-page">When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.
+                </span> </p>
+                <hr>
+                <p><span class="bold">Director:</span> <span id="director">Matt Reeves</span></p>
+                <p><span class="bold">Cast:</span> <span id="cast"> Robert Pattinson, Zoë Kravitz, Jeffrey Wright</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
